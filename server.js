@@ -7,7 +7,7 @@ let PORT = process.env.PORT || 3000;
 // Create application / JSON parser
 var jsonParser = bodyParser.json()
 
-// const path = require('path')
+const path = require('path')
 
 // Create application / x-www-form-urlencoded parser
 var urlencodedParser = bodyParser.urlencoded({ extended: false})
@@ -23,7 +23,8 @@ app.use(bodyParser.text({type: 'text/html'}));
 
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-require("./app/routing/htmlroutes.js")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 // app.use(express.static('public'))
 

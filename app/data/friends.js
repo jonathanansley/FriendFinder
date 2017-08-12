@@ -1,8 +1,8 @@
 var friends = [
 
 	{
-		name: "Grimace"
-		photo: "http://cdn1-www.craveonline.com/assets/mandatory/legacy/2016/07/man_file_1111706_mcdonald27sorigins3.jpg"
+		name: "Grimace",
+		photo: "http://cdn1-www.craveonline.com/assets/mandatory/legacy/2016/07/man_file_1111706_mcdonald27sorigins3.jpg",
 		scores: [
 			"2",
 			"3",
@@ -19,18 +19,18 @@ var friends = [
 	},
 
 	{
-		name: "Grimace"
-		photo: "http://cdn1-www.craveonline.com/assets/mandatory/legacy/2016/07/man_file_1111706_mcdonald27sorigins3.jpg"
+		name: "Hamburgler",
+		photo: "http://vignette4.wikia.nocookie.net/ronaldmcdonald/images/0/0f/Imgres.jpeg/revision/latest?cb=20150625050506",
 		scores: [
+			"1",
+			"4",
+			"3",
 			"2",
-			"3",
-			"5",
-			"1",
-			"4",
 			"5",
 			"3",
+			"2",
 			"1",
-			"4",
+			"3",
 			"2"
 		]	
 
@@ -38,62 +38,78 @@ var friends = [
 
 
 	{
-		name: "Grimace"
-		photo: "http://cdn1-www.craveonline.com/assets/mandatory/legacy/2016/07/man_file_1111706_mcdonald27sorigins3.jpg"
+		name: "Ronald McDonald",
+		photo: "http://cdn23.us3.fansshare.com/photos/mcdonalds/ronald-leaning-ronald-mcdonald-1416217940.jpg",
 		scores: [
-			"2",
-			"3",
-			"5",
-			"1",
-			"4",
 			"5",
 			"3",
 			"1",
+			"1",
+			"1",
+			"5",
 			"4",
-			"2"
+			"1",
+			"5",
+			"3"
 		]	
 
 	},
 
 
 	{
-		name: "Grimace"
-		photo: "http://cdn1-www.craveonline.com/assets/mandatory/legacy/2016/07/man_file_1111706_mcdonald27sorigins3.jpg"
+		name: "Birdie",
+		photo: "http://www.tias.com/stores/jjt/pictures/e19a.jpg",
 		scores: [
+			"3",
+			"5",
+			"5",
+			"5",
+			"4",
+			"1",
+			"3",
+			"5",
 			"2",
-			"3",
-			"5",
-			"1",
-			"4",
-			"5",
-			"3",
-			"1",
-			"4",
-			"2"
+			"3"
 		]	
 
 	},
 
 
 	{
-		name: "Grimace"
-		photo: "http://cdn1-www.craveonline.com/assets/mandatory/legacy/2016/07/man_file_1111706_mcdonald27sorigins3.jpg"
+		name: "Burger King",
+		photo: "https://cdn.potatopro.com/cdn/farfuture/hNX-HG4DyXFdlZ-edppXw6g7qPucvW829R18NRf3kWY/mtime:1498547286/sites/default/files/styles/top-image/public/field/image/the_king.png?itok=xc6izdl6",
 		scores: [
-			"2",
 			"3",
-			"5",
-			"1",
 			"4",
+			"1",
 			"5",
 			"3",
-			"1",
+			"5",
+			"4",
+			"2",
 			"4",
 			"2"
 		]	
 
 	},
 
+	{
+		name: "Jack in the Box",
+		photo: "https://lovelace-media.imgix.net/uploads/465/223b4020-ac2c-0133-36e2-06f6704604f5.gif",
+		scores: [
+			"3",
+			"4",
+			"1",
+			"5",
+			"3",
+			"5",
+			"4",
+			"2",
+			"4",
+			"2"
+		]	
 
+	},
 
 ]
 

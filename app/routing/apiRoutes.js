@@ -1,8 +1,20 @@
-var path = require("path");
+var friends = require("../data/friends.js");
 
 module.exports = function (app) {
-
-	app.get("/survey", function(req, res) {
-		res.sendFile(path.join(__dirname + "/../public/survey.html"));
-	})
+	console.log('hey');
+	app.get("/api/friends", function(req, res) {
+		res.json(friends);
+	});
 } // end of module.exports function
+
+app.post("/api/friends", function(req, res) {
+	
+	var bestMatch = {
+		name: "",
+		photo: "",
+		friendDifference: 1000
+	};
+
+} // end of anonymous function for /api/friends
+
+	); // end of app.post("/api/friends"
