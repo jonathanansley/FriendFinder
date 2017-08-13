@@ -4,7 +4,8 @@ module.exports = function (app) {
 
 	console.log('This is from apiRoutes.js module.exports');
 
-	app.get("/api/friends", function(req, res) {
+	// app.get("/api/friends", function(req, res) {
+	app.get("/api/friends", (req, res)=>{
 		res.json(friends);
 	}); // end of app.get for /api/friends
 
