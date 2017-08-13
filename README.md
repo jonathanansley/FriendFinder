@@ -11,13 +11,16 @@ compatibility-based "FriendFinder" application -- basically a dating app.
 
 This full-stack site will take in results your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match. 
 
-You will use Express to handle routing. Make sure you deploy your app to Heroku so other users can fill it out.
+You will use Express to handle routing.
+
+Make sure you deploy your app to Heroku so other users can fill it out.
 
 ### Before You Begin
 
+done
 * Check out [this demo version of the site](https://friend-finder.herokuapp.com/).
 
-
+done
 * Create a folder called `FriendFinder`. Inside the folder, organize your directories so it matches the following:
 
   ```
@@ -38,9 +41,12 @@ You will use Express to handle routing. Make sure you deploy your app to Heroku 
 
 ### Instructions
 
+done
 1. Your survey should have 10 questions of your choosing. Each answer should be on a scale of 1 to 5 based on how much the user agrees or disagrees with a question.
 
+done
 2. Your `server.js` file should require the basic npm packages we've used in class: `express`, `body-parser` and `path`.
+
 
 3. Your `htmlRoutes.js` file should include two routes:
 

@@ -1,3 +1,8 @@
+// 10:13 - unable to get localhost:3000/api/friends to work
+
+
+
+
 const express = require('express');
 let app = express();
 const bodyParser = require('body-parser')
