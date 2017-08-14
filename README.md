@@ -48,15 +48,16 @@ done
 2. Your `server.js` file should require the basic npm packages we've used in class: `express`, `body-parser` and `path`.
 
 
+done
 3. Your `htmlRoutes.js` file should include two routes:
-
    * A GET Route to `/survey` which should display the survey page.
    * A default USE route that leads to `home.html` which displays the home page. 
 
-4. Your `apiRoutes.js` file should contain two routes:
 
+4. Your `apiRoutes.js` file should contain two routes:
    * A GET route with the url `/api/friends`. This will be used to display a JSON of all possible friends.
    * A POST routes `/api/friends`. This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic. 
+
 
 5. You should save the data in your app as an array of objects. Each of these objects should roughly follow the format below.
 
@@ -98,9 +99,3 @@ done
 ### Minimum Requirements
 
 Attempt to complete homework assignment as described in instructions. If unable to complete certain portions, please pseudocode these portions to describe what remains to be completed.
-
-- - -
-
-### One More Thing
-
-If you have any questions about this project or the material we have covered, please post them in the community channels in slack so that your fellow developers can help you! If you're still having trouble, you can come to office hours for assistance from your instructor and TAs.

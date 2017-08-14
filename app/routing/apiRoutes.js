@@ -9,53 +9,57 @@ module.exports = function (app) {
 		res.json(friends);
 	}); // end of app.get for /api/friends
 
-		app.post("/api/friends", function(req, res) {
-			
-			var bestMatch = {
-				name: "",
-				photo: "",
-				friendDifference: 1000
-			};
+	app.post("/api/friends", function(req, res) {
 
-			// Take result of user's survey POST and parse it.
-			var userData = req.body;
-			var userScores = userData.scores;
+		var bestMatch = {
+			name: "",
+			photo: "",
+			friendDifference: 1000
+		};
 
-			console.log(userScores);
+		// Take result of user's survey POST and parse it.
+		var userData 	= req.body;
+		var userScores	= userData.scores;
 
-			// Calculate difference between scores from user and scores from database
-			var totalDifference = 0;
+		console.log(userScores);
 
-			// Loop through all the friend possibilities in database.
-			for (var i = 0; i < friends.length; i++) {
+		// Calculate difference between scores from user and scores from database
+		var totalDifference = 0;
 
-				console.log(friends[i]);
-				totalDifference = 0;
+		// Loop through all the friend possibilities in database.
+		for (var i = 0; i < friends.length; i++) {
 
-				// Loop through scores of each friend
-				for (var j = 0; j < friends[i].scores[j]; j++) {
+			console.log(friends[i]);
+			totalDifference = 0;
 
-					// Calculate difference between scores and add them up
-					totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]))
+			// Loop through scores of each friend
+			for (var j = 0; j < friends[i].scores[j]; j++) {
 
-					// If sum of differences is
-					// less than differences of current "best match"
-					if (totalDifference <= bestMatch.friendDifference) {
+				// Calculate difference between scores and add them up
+				totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
+				//???
+				// totalDifference = 10;
+				console.log('totalDifference = ' + totalDifference);
 
-							// Reset best match to new friend.
-							bestMatch.name = friends[i].name;
-							bestMatch.photo = friends[i].photo;
-							bestMatch.friendDifference = totalDifference;
-					} // end of if statement
-				} // end of loop through friend scores
-			} // end of loop through all the friend possibilities
+				// If sum of differences is
+				// less than differences of current "best match"
+				if (totalDifference <= bestMatch.friendDifference) {
 
-			// Save user's data to database AFTER the check.
-			friends.push(userData);
+						// Reset best match to new friend.
+						bestMatch.name				= friends[i].name;
+						bestMatch.photo				= friends[i].photo;
+						bestMatch.friendDifference	= totalDifference;
+				} // end of if totalDifference statement
+			} // end of loop through friend scores
+		} // end of loop through all the friend possibilities
 
-			// Return JSON with user's bestMatch.
-			// It will be used by HTML.
-			res.json(bestMatch);
-		} // end of anonymous function for /api/friends
-	); // end of app.post("/api/friends"
+		// Save user's data to database AFTER the check.
+		friends.push(userData);
+
+		// Return JSON with user's bestMatch.
+		// It will be used by HTML.
+		res.json(bestMatch);
+	});
+	// 	} // end of anonymous function for /api/friends
+	// ); // end of app.post("/api/friends"
 } // end of module.exports function

@@ -203,33 +203,38 @@
 
     // Capture the form inputs 
     $("#submit").on("click", function(){
-
+    	console.log('This is from survey.html - User clicked submit button.');
     	// Form validation
     	function validateForm() {
 		  var isValid = true;
 		  $('.form-control').each(function() {
 		    if ( $(this).val() === '' )
 		        isValid = false;
-		  });
+		  }); // end of .form-control
 
 		  $('.chosen-select').each(function() {
-
 		  	if( $(this).val() === "")
 		  		isValid = false
-		  })
+		  }); // end of .chosen-select
 		  return isValid;
-		}
+		} // end of function validateForm
 
 		// If all required fields are filled
 		if (validateForm() == true)
 		{
+			console.log('validateForm evaluated to true.');
 			// Create an object for the user's data
 	    	var userData = {
 	    		name: $("#name").val(),
 	    		photo: $("#photo").val(),
 	    		scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
-	    	}
+	    	} // end of variable userData
 
+	    	// var userData = {
+	    	// 	name: "Bob Ross",
+	    	// 	photo: "http://media.npr.org/blog/april/5/bobross200-4a8d033ed799a71520307066932c4126f1821016-s6-c30.jpg",
+	    	// 	scores: [1, 2, 3, 4, 5, 1, 2, 3, 4, 5 ]
+	    	// } // end of variable userData
 
 	    	// Grab the URL of the website
 	    	var currentURL = window.location.origin;
@@ -243,17 +248,16 @@
 
 		    	// Show the modal with the best match 
 		    	$("#resultsModal").modal('toggle');
-
-	    	});
-		}
+		    	alert('This is from survey.html');
+	    	}); // end of $.post(currentURL
+		} // end of if when validateForm is true
 		else
 		{
 			alert("Please fill out all fields before submitting!");
-		}
+		} // end of if when validateForm is false
     	
     	return false;
-    });
-
+    }); // end of .on("click") for submit button
 
   </script>
 

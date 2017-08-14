@@ -14,12 +14,13 @@ var friends = [
 			"1",
 			"4",
 			"2"
-		]	
+		]
 
 	},
 
+
 	{
-		name: "Hamburgler",
+		name: "Hamburglar",
 		photo: "http://vignette4.wikia.nocookie.net/ronaldmcdonald/images/0/0f/Imgres.jpeg/revision/latest?cb=20150625050506",
 		scores: [
 			"1",
@@ -32,7 +33,7 @@ var friends = [
 			"1",
 			"3",
 			"2"
-		]	
+		]
 
 	},
 
@@ -51,7 +52,7 @@ var friends = [
 			"1",
 			"5",
 			"3"
-		]	
+		]
 
 	},
 
@@ -70,7 +71,7 @@ var friends = [
 			"5",
 			"2",
 			"3"
-		]	
+		]
 
 	},
 
@@ -89,27 +90,9 @@ var friends = [
 			"2",
 			"4",
 			"2"
-		]	
+		]
 
-	},
-
-	{
-		name: "Jack in the Box",
-		photo: "https://lovelace-media.imgix.net/uploads/465/223b4020-ac2c-0133-36e2-06f6704604f5.gif",
-		scores: [
-			"3",
-			"4",
-			"1",
-			"5",
-			"3",
-			"5",
-			"4",
-			"2",
-			"4",
-			"2"
-		]	
-
-	},
+	}
 
 ]
 

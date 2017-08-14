@@ -9,10 +9,8 @@ module.exports = function (app) {
 	}); // end of app.get for /survey
 
 	// generic URL will send user to home page
-	// *** not working
-	// app.get(function(req, res) {
-	app.get("/home", function(req, res) {
-	// app.get("/", (req, res)=>{
+	// app.use(function(req, res) {
+	app.use((req, res)=>{
 		res.sendFile(path.join(__dirname + "/../public/home.html"));
 	}); // end of app.get for /home
 
