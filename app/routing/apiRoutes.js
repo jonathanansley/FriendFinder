@@ -21,7 +21,7 @@ module.exports = function (app) {
 		var userData 	= req.body;
 		var userScores	= userData.scores;
 
-		console.log(userScores);
+		console.log('userscores', req.body);
 
 		// Calculate difference between scores from user and scores from database
 		var totalDifference = 0;
@@ -30,7 +30,7 @@ module.exports = function (app) {
 		for (var i = 0; i < friends.length; i++) {
 
 			console.log(friends[i]);
-			totalDifference = 0;
+			// totalDifference = 0;
 
 			// Loop through scores of each friend
 			for (var j = 0; j < friends[i].scores[j]; j++) {
